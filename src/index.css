@@ -777,7 +777,7 @@ body {
 }
 
 .intro-page_main-block_img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .text-side_partners {
@@ -1587,24 +1587,21 @@ body {
 @media (max-width: 1200px) {
   .introducion-page {
     position: relative;
+    overflow: hidden;
   }
   .intro-page_main-block_text-side {
     z-index: 2;
   }
-  .intro-page_main-block_image-container {
-    z-index: 1;
-    opacity: 0.07;
-  }
   .introducion-page_slider {
-    background: rgba(237, 235, 247, 0.3);
     padding: 32px 0px;
   }
   .intro-page_main-block_image-container {
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -10px;
+    z-index: 1;
+    opacity: 0.2;
   }
   .intro-page_main-block_img {
     height: 100%;
@@ -1619,11 +1616,6 @@ body {
   }
 }
 @media (min-width: 1440.1px) {
-  .intro-page_main-block_image-container {
-    border-bottom-right-radius: 40px;
-    border-bottom-left-radius: 40px;
-    overflow: hidden;
-  }
   .intro-page_main-block_image-container {
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
