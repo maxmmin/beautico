@@ -892,7 +892,7 @@ body {
 .most-trusted-products-section {
   text-align: center;
   margin: 160px auto 0;
-  max-width: 1280px;
+  max-width: 1310px;
   padding: 0 15px;
 }
 
@@ -1073,7 +1073,7 @@ body {
 }
 
 .recomendations-section {
-  max-width: 1280px;
+  max-width: 1310px;
   margin-top: 158px;
   padding: 0 15px;
 }
@@ -1108,7 +1108,7 @@ body {
 }
 
 .customers-reviews-section {
-  max-width: 1280px;
+  max-width: 1310px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1283,7 +1283,7 @@ body {
 }
 
 .latest-posts {
-  max-width: 1280px;
+  max-width: 1310px;
   margin-top: 128px;
   padding: 0 15px;
 }
@@ -1418,7 +1418,7 @@ body {
 }
 
 .footer-wrapper {
-  max-width: 1280px;
+  max-width: 1310px;
   margin: 80px auto 0px;
   width: 100%;
   padding: 0px 15px;
