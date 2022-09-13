@@ -72,6 +72,8 @@
 }
 body {
   font-size: 14px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .container-fluid {
@@ -647,6 +649,7 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  display: flex;
   margin: 0 -32px !important;
 }
 
@@ -663,6 +666,18 @@ body {
 
 .header_side-buttons {
   margin: 0 -4px;
+}
+
+.header-wrapper_header-container {
+  transition: 0.25s ease-out;
+}
+
+.header-container_navbar-toggler.active::before {
+  width: 20px;
+}
+
+.header-container_navbar-toggler.active::after {
+  width: 10px;
 }
 
 .side-btn {
@@ -707,6 +722,38 @@ body {
   font-weight: 400;
   font-size: 1.1428571429em;
   line-height: 150%;
+}
+
+.header-container_mobile {
+  width: 100%;
+  display: none;
+  padding: 0px 25px;
+}
+
+.header-container_curology-logo {
+  height: 40px;
+}
+
+.header-container_navbar-toggler {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: none;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background: transparent;
+  align-items: flex-end;
+}
+
+.header-container_navbar-toggler::before, .header-container_strip, .header-container_navbar-toggler::after {
+  display: block;
+  content: "";
+  background: #3C2769;
+  height: 3px;
+  width: 100%;
+  transition: 0.25s ease-out;
 }
 
 .introducion-page {
@@ -777,7 +824,8 @@ body {
 }
 
 .intro-page_main-block_img {
-  max-width: 100%;
+  margin: 0px;
+  width: 100%;
 }
 
 .text-side_partners {
@@ -1368,8 +1416,9 @@ body {
   margin-bottom: auto !important;
 }
 
-.lp_pc_main-block-readmore-block {
+.about-us_interactive-elems.lp_pc_main-block-readmore-block {
   margin-top: 16px;
+  justify-content: flex-start;
 }
 
 .lp_pc_main-block_fast-description {
@@ -1421,16 +1470,10 @@ body {
 .footer-wrapper {
   max-width: 1310px;
   margin: 80px auto 0px;
-  width: 100%;
   padding: 0px 15px;
 }
 
-.prefooter {
-  padding: -25px -62px;
-}
-
 .prefooter_subscribe-container {
-  padding: 25px 62px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1441,10 +1484,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.prefooter_nav {
-  padding: 25px 62px;
 }
 
 .prefooter-nav_list {
@@ -1572,20 +1611,18 @@ body {
 }
 
 .pink-btn {
-  background: #CF4D74;
   border: 1px solid #CF4D74;
   background: #CF4D74;
   color: #FFFFFF;
 }
 
 .light-btn {
-  background: #FFFFFF;
   border: 1px solid #CDD5DF;
-  background: #202939;
+  color: #202939;
   background: #FFFFFF;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199.9px) {
   .introducion-page {
     position: relative;
     overflow: hidden;
@@ -1616,7 +1653,130 @@ body {
     margin-bottom: auto;
   }
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@media (max-width: 991.9px) {
+  .interactive-part_column {
+    max-width: initial;
+  }
+  .frequently-questions-block {
+    margin-top: 80px;
+  }
+  .lp_pc_post-card {
+    width: calc(50% - 32px);
+  }
+  .prefooter_subscribe-container {
+    justify-content: flex-start;
+  }
+  .prefooter_nav {
+    margin: -30px -20px;
+  }
+  .prefooter_nav_list-container {
+    padding: 30px 20px;
+  }
+  .prefooter_subscribe-container {
+    align-items: center;
+  }
+  .prefooter_subscribe-header, .prefooter_subscribe-advance {
+    text-align: center;
+  }
+  .prefooter_nav {
+    justify-content: space-evenly;
+    margin-top: 70px;
+  }
+  .header_side-buttons {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 767.9px) {
+  .header-container_mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  }
+  .header-wrapper_header-container {
+    max-height: 70px;
+  }
+  .header {
+    flex-direction: row;
+  }
+  .intro-page_main-block_image-container {
+    opacity: 0.1;
+  }
+  .slide-span {
+    padding: 16px 36px;
+  }
+  .intro-page_main-block_text-side, .text-side_internal-text-container, .text-side_partners {
+    align-items: center;
+    text-align: center;
+  }
+  .recomendation-block {
+    flex-direction: column-reverse;
+  }
+  .recomendation-block + .recomendation-block {
+    flex-direction: column-reverse;
+  }
+  .recomendation-block_image-block {
+    margin-top: 70px;
+    max-width: 517px;
+  }
+  .recomendation-block_main-block {
+    text-align: center;
+  }
+  .about-us_interactive-elems {
+    justify-content: center;
+  }
+  .interactive-part_contact-us-block {
+    text-align: center;
+  }
+  .lp_hcon_textnbtn-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .lp_hcon_tb-con_btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 30px;
+  }
+  .lp_head-container {
+    text-align: center;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .nav-el + .nav-el {
+    margin-top: 5px;
+  }
+  .header_side-buttons {
+    flex-direction: column;
+  }
+  .header_side-buttons_btn-subscribe {
+    margin-top: 10px;
+  }
+  .prefooter_nav {
+    flex-wrap: wrap;
+  }
+  .prefooter-nav_list-header, .prefooter-nav_list {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .prefooter_nav_list-container {
+    width: 50%;
+    padding-left: 15%;
+  }
+  .lp_posts-container {
+    justify-content: center;
+  }
+  .lp_pc_post-card {
+    width: calc(100% - 32px);
+    max-width: 450px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.9px) {
   .header_side-buttons {
     padding-left: 26.9px;
   }

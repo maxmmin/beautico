@@ -21,25 +21,35 @@
                 </div>
             </div>
 
-            <div class="row header justify-content-lg-between g-0">
-                <div class="header_dead-space col-xl col-md-0"></div>
-                
-                <div class="col-lg-8 navbar-wrapper d-flex justify-content-xl-center justify-content-lg-start justify-content-md-center align-items-center">
-                    <nav class="navbar row m-0 g-0">
-                        <span class="nav-el col">Products</span>
-                        <span class="nav-el col">Story</span>
-                        <span class="nav-el col">Blog</span>
-                        <span class="nav-el col d-inline-flex align-items-center">
-                            <span class="nav-el_collections-label">Collections</span>
-                            <span class="nav-el_collections-expand-more">expand_more</span>
-                        </span>
-                        <span class="nav-el col">Contact</span>
-                    </nav>
+            <div class="header-wrapper_header-container">
+                <div class="header-container_mobile">
+                    <img src="./src/img/cur-logo.png" alt="" class="header-container_curology-logo">
+
+                    <button class="header-container_navbar-toggler">
+                        <span class="header-container_strip"></span>
+                    </button>
                 </div>
 
-                <div class="d-flex header_side-buttons col-xl col-lg-auto align-items-center justify-content-md-center">
-                    <button class="header_side-buttons_btn-cart btn-animated side-btn d-flex align-items-center light-btn"><span class="side-buttons_btn-cart-icon">shopping_bag</span><span class="side-buttons_btn-cart-label">Cart</span></button>
-                    <button class="header_side-buttons_btn-subscribe btn-animated side-btn pink-btn">Subscribe</button>
+                <div class="row header justify-content-center justify-content-sm-between justify-content-md-start justify-content-lg-between g-0">
+                    <div class="header_dead-space col-xl col-0"></div>
+                    
+                    <div class="col-sm-auto col-md-12 col-lg-8 navbar-wrapper d-flex justify-content-xl-center justify-content-lg-start justify-content-md-center align-items-center">
+                        <nav class="navbar">
+                            <span class="nav-el">Products</span>
+                            <span class="nav-el">Story</span>
+                            <span class="nav-el">Blog</span>
+                            <span class="nav-el d-inline-flex align-items-center">
+                                <span class="nav-el_collections-label">Collections</span>
+                                <span class="nav-el_collections-expand-more">expand_more</span>
+                            </span>
+                            <span class="nav-el">Contact</span>
+                        </nav>
+                    </div>
+    
+                    <div class="d-flex header_side-buttons col-sm-auto col-md-12 col-lg-auto align-items-md-center align-items-sm-end justify-content-center">
+                        <button class="header_side-buttons_btn-cart btn-animated side-btn d-flex align-items-center light-btn"><span class="side-buttons_btn-cart-icon">shopping_bag</span><span class="side-buttons_btn-cart-label">Cart</span></button>
+                        <button class="header_side-buttons_btn-subscribe btn-animated side-btn pink-btn">Subscribe</button>
+                    </div>
                 </div>
             </div>
         </header>
@@ -51,7 +61,7 @@
 
                         <div class="intro-page_main-block_text-side col-xl-6 col d-flex flex-column justify-content-between">
                             
-                            <div class="text-side_internal-text-container">
+                            <div class="text-side_internal-text-container d-flex flex-column">
                                 <h1 class="txt-s_intern-txt-con_heading">
                                     Hydrated skin in 3 easy steps
                                 </h1>
@@ -66,7 +76,7 @@
                                 </div>
                             </div>
 
-                            <div class="text-side_partners">
+                            <div class="text-side_partners d-flex flex-column">
                                     <h6 class="txt-s_partners_trusted-by">Trusted by the world's best companies</h6>
                                     <div class="txt-s_partners_logos-container">
                                         <img src="./src/img/logo1.svg" alt="logo" class="txt-s_partners_logo">
@@ -77,7 +87,7 @@
                         </div>
 
                         
-                        <div class="d-flex intro-page_main-block_image-container col-6 justify-content-end align-items-start">
+                        <div class="d-flex intro-page_main-block_image-container col-md-6 col-12 justify-content-end align-items-start">
                             <img class="intro-page_main-block_img" src="./src/img/darkman.svg" alt="man">
                         </div>
 
@@ -682,7 +692,7 @@
                 <div class="interactive-part-wrapper d-flex justify-content-center">
                     <div class="interactive-part_inner-container row g-0 justify-content-center">
                         
-                        <div class="interactive-part_column contact-us-col col-6">
+                        <div class="interactive-part_column contact-us-col col-lg-6">
                             <div class="interactive-part_contact-us-block">
                                 <h2 class="int-part_heading about-us_heading m-0">Frequently asked questions</h2>
                                 <p class="int-part_text about-us_text">Frequently asked questions ordered by popularity. Remember that if the visitor has not committed to the call to action, they may still have questions (doubts) that can be answered.</p>
@@ -690,7 +700,7 @@
                             </div>
                         </div>
 
-                        <div class="interactive-part_column col-6">
+                        <div class="interactive-part_column col-lg-6">
                             <div class="frequently-questions-block">
 
 
@@ -876,8 +886,8 @@
         </main>
 
         <footer class="footer-wrapper">
-            <div class="prefooter row justify-content-between g-0">
-                <div class="prefooter_subscribe-container col-4 p-0">
+            <div class="prefooter row justify-content-center justify-content-lg-between g-0">
+                <div class="prefooter_subscribe-container col-lg-5 col-xl-4">
                     <h5 class="prefooter_subscribe-header">Join our newsletter to stay up to date on features and releases.</h5>
                     <form action="/" class="prefooter_subscribe-form">
                         <input type="text" class="prefooter_subscribe-input">
@@ -888,7 +898,7 @@
                     </p>
                 </div>
 
-                <nav class="prefooter_nav col-7 p-0">
+                <nav class="prefooter_nav col-lg-6 col-xl-7">
                     <div class="prefooter_nav_list-container">
                         <h6 class="prefooter-nav_list-header">Pages</h6>
                         <ul class="prefooter-nav_list">
