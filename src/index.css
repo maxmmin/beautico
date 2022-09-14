@@ -608,6 +608,9 @@ body {
   font-size: 1em;
   line-height: 150%;
 }
+.header-banner_main span {
+  text-align: center;
+}
 
 .header-banner_close-div, .header-banner_dead-space {
   max-width: 72px;
@@ -740,8 +743,9 @@ body {
   justify-content: space-evenly;
   align-items: center;
   border: none;
-  width: 40px;
+  width: 30px;
   height: 40px;
+  padding: 0px;
   flex-shrink: 0;
   background: transparent;
   align-items: flex-end;
@@ -754,6 +758,10 @@ body {
   height: 3px;
   width: 100%;
   transition: 0.25s ease-out;
+}
+
+.banner_shop-now {
+  cursor: pointer;
 }
 
 .introducion-page {
@@ -929,6 +937,7 @@ body {
   font-size: 1.1428571429em;
   line-height: 150%;
   color: #121926;
+  cursor: pointer;
 }
 
 .contact-us-refference {
@@ -1505,6 +1514,7 @@ body {
 }
 
 .prefooter_subscribe-input {
+  height: 56px;
   margin: 0 8px;
   max-width: 321px;
   width: 100%;
@@ -1519,6 +1529,10 @@ body {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
   padding: 0 5px;
+}
+
+.prefooter-nav_list_item {
+  cursor: pointer;
 }
 
 .prefooter_subscribe-advance {
@@ -1593,6 +1607,9 @@ body {
 }
 
 .footer_social-links_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 24px;
   height: 24px;
   margin: 0 12px;
@@ -1620,6 +1637,10 @@ body {
   border: 1px solid #CDD5DF;
   color: #202939;
   background: #FFFFFF;
+}
+
+.smbr {
+  display: none;
 }
 
 @media (max-width: 1199.9px) {
@@ -1775,10 +1796,55 @@ body {
     width: calc(100% - 32px);
     max-width: 450px;
   }
+  .interactive-part-wrapper {
+    padding: 128px 15px 160px;
+  }
+}
+@media (max-width: 575.9px) {
+  .intro-page_main-block_text-side {
+    padding: 78px 15px;
+  }
+  .header-container_mobile {
+    padding: 0px 10px;
+  }
+  .slide-span {
+    padding: 10px 22.5px;
+  }
+  .header {
+    padding: 15px 15px;
+  }
+  .smbr {
+    display: block;
+  }
+  .text-side_btn {
+    margin-top: 15px;
+  }
+  .recomendation-block_image-block {
+    min-width: unset;
+  }
+  .tutor-p_heading {
+    white-space: normal;
+  }
+  .decoration-slider_slide {
+    max-width: 170px;
+    max-height: 170px;
+  }
+  .prefooter_subscribe-form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .prefooter_subscribe-btn {
+    margin-top: 20px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991.9px) {
   .header_side-buttons {
     padding-left: 26.9px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1399.9px) {
+  .interactive-part-wrapper {
+    padding: 128px 15px 160px;
   }
 }
 @media (min-width: 1440.1px) {
