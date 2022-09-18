@@ -1655,7 +1655,7 @@ body {
     z-index: 2;
   }
   .introducion-page_slider {
-    padding: 40px 0px;
+    padding: 20px 0px 40px;
   }
   .intro-page_main-block_image-container {
     position: absolute;
@@ -1817,6 +1817,9 @@ body {
   }
 }
 @media (max-width: 575.9px) {
+  .slide-span {
+    padding: 13px 27px;
+  }
   body {
     font-size: 13px;
   }
