@@ -607,6 +607,9 @@ body {
   font-weight: 400;
   font-size: 1em;
   line-height: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header-banner_main span {
   text-align: center;
@@ -1716,6 +1719,9 @@ body {
     height: 70px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   }
+  .nav-el_collections-expand-more {
+    line-height: 100%;
+  }
   .header-wrapper_header-container {
     max-height: 70px;
   }
@@ -1768,6 +1774,9 @@ body {
     flex-direction: column;
     align-items: stretch;
   }
+  .nav-el {
+    line-height: 180%;
+  }
   .nav-el + .nav-el {
     margin-top: 5px;
   }
@@ -1787,7 +1796,14 @@ body {
   }
   .prefooter_nav_list-container {
     width: 50%;
-    padding-left: 15%;
+    display: flex;
+    justify-content: center;
+  }
+  .prefooter_nav_list-inner {
+    width: 129px;
+  }
+  .prefooter-nav_list-header {
+    width: 100%;
   }
   .lp_posts-container {
     justify-content: center;
@@ -1835,6 +1851,18 @@ body {
   }
   .prefooter_subscribe-btn {
     margin-top: 20px;
+  }
+  .prefooter_nav_list-container {
+    width: 100%;
+  }
+  .prefooter_nav_list-inner {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: center;
+  }
+  .header-banner_main {
+    flex-direction: column;
   }
 }
 @media (min-width: 768px) and (max-width: 991.9px) {
