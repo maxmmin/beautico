@@ -1646,10 +1646,6 @@ body {
   background: #FFFFFF;
 }
 
-.smbr {
-  display: none;
-}
-
 @media (max-width: 1199.9px) {
   .introducion-page {
     position: relative;
@@ -1659,7 +1655,7 @@ body {
     z-index: 2;
   }
   .introducion-page_slider {
-    padding: 32px 0px;
+    padding: 40px 0px;
   }
   .intro-page_main-block_image-container {
     position: absolute;
@@ -1733,7 +1729,7 @@ body {
     flex-direction: row;
   }
   .intro-page_main-block_image-container {
-    opacity: 0.1;
+    display: none !important;
   }
   .slide-span {
     padding: 16px 36px;
@@ -1821,20 +1817,20 @@ body {
   }
 }
 @media (max-width: 575.9px) {
+  body {
+    font-size: 13px;
+  }
+  .footer {
+    padding: 32.35px 0px;
+  }
   .intro-page_main-block_text-side {
-    padding: 78px 15px;
+    padding: 78px 15px 38px;
   }
   .header-container_mobile {
     padding: 0px 10px;
   }
-  .slide-span {
-    padding: 10px 22.5px;
-  }
   .header {
     padding: 15px 15px;
-  }
-  .smbr {
-    display: block;
   }
   .text-side_btn {
     margin-top: 15px;
