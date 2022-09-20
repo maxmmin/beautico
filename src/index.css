@@ -1305,6 +1305,12 @@ body {
   line-height: 150%;
   color: #202939;
   margin-right: 20px;
+  flex-grow: 1;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .int-part_question_question-head_toogle-btn {
